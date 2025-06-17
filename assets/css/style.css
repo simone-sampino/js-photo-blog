@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-/* utils */
-.container {
-}
-
 /* Generics */
 header {
   font-family: "Sometype Mono", monospace;
@@ -22,9 +18,46 @@ header {
 
 main {
   background-image: url(../img/cork.png);
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
-/* p {
+span {
   font-family: "Edu TAS Beginner", cursive;
-} */
+}
+
+/* utils */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Card */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+
+  .col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 0 10px;
+
+    .card {
+      padding: 20px;
+      background-color: #fff;
+      margin-bottom: 2rem;
+
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+      }
+
+      .card-body {
+        margin-top: 20px;
+      }
+    }
+  }
+}
