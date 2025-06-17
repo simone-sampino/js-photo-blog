@@ -56,7 +56,7 @@ main {
       .card-body {
         margin-top: 20px;
 
-        span {
+        div {
           font-family: "Edu TAS Beginner", cursive;
         }
       }
