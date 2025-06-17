@@ -18,21 +18,12 @@ header {
 
 main {
   background-image: url(../img/cork.png);
-  /* min-height: 100vh; */
-}
-
-span {
-  font-family: "Edu TAS Beginner", cursive;
 }
 
 /* utils */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.flex {
-  display: flex;
 }
 
 /* Card */
@@ -51,6 +42,12 @@ span {
       margin-bottom: 2rem;
       position: relative;
 
+      .pin {
+        position: absolute;
+        top: -10px;
+        right: 170px;
+      }
+
       img {
         max-width: 100%;
         vertical-align: middle;
@@ -58,12 +55,10 @@ span {
 
       .card-body {
         margin-top: 20px;
-      }
 
-      .pin {
-        position: absolute;
-        top: -10px;
-        right: 170px;
+        span {
+          font-family: "Edu TAS Beginner", cursive;
+        }
       }
     }
   }
