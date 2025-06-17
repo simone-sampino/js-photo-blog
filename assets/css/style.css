@@ -1,5 +1,30 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* utils */
+.container {
+}
+
+/* Generics */
+header {
+  font-family: "Sometype Mono", monospace;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background-image: url(../img/wall.png);
+}
+
+main {
+  background-image: url(../img/cork.png);
+  min-height: 100vh;
+}
+
+/* p {
+  font-family: "Edu TAS Beginner", cursive;
+} */
