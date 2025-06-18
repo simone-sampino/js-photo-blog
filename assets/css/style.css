@@ -13,27 +13,39 @@ header {
   font-size: 2rem;
   padding: 1rem;
   text-align: center;
-  background-image: url(../img/wall.png);
+  background-image: url(../../assets/img/wall.png);
 }
 
 main {
-  background-image: url(../img/cork.png);
+  background-image: url(../../assets/img/cork.png);
 }
 
 /* Utils */
 .container {
   max-width: 1200px;
+  width: 75%;
   margin: 0 auto;
+}
+
+[class^="col"] {
+  padding: 0 1rem;
+}
+
+.col {
+  width: auto;
+  flex-basis: auto;
+  flex-grow: 1;
 }
 
 /* Card */
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -1rem;
   padding: 50px 0;
 
-  .col-4 {
-    width: calc(100% / 12 * 4);
+  .col-sm-12 {
+    width: 100%;
     padding: 0 10px;
 
     .card {
@@ -45,7 +57,7 @@ main {
       .pin {
         position: absolute;
         top: -10px;
-        right: 170px;
+        right: 45%;
       }
 
       img {
@@ -60,6 +72,26 @@ main {
           font-family: "Edu TAS Beginner", cursive;
         }
       }
+    }
+  }
+}
+
+/* Responsive */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .row {
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .row {
+    .col-sm-12 {
+      width: calc(100% / 12 * 4);
     }
   }
 }

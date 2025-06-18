@@ -14,7 +14,7 @@ fetch(endPointUrl)
       console.log(title, date, url);
 
       const cardMarkup = `
-        <div class="col-4">
+        <div class="col col-sm-12 col-md-6 col-lg-4">
             <div class="card">
                 <img class="pin" src="./assets/img/pin.svg" alt="">
                 <img src="${url}" alt="">
