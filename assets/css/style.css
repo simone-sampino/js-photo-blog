@@ -65,9 +65,10 @@ main {
         right: 45%;
       }
 
-      img {
+      .card-img {
         max-width: 100%;
         vertical-align: middle;
+        cursor: pointer;
       }
 
       .card-body {
@@ -107,6 +108,11 @@ main {
     border: transparent;
     background-color: transparent;
     cursor: pointer;
+  }
+
+  .modal-img {
+    max-width: 75%;
+    max-height: 75%;
   }
 }
 
