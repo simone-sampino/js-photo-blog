@@ -42,12 +42,19 @@ fetch(endPointUrl)
 
     rowEl.insertAdjacentHTML("afterend", modalMarkup);
 
+    // DOM elements
     const overlayEl = document.querySelector(".overlay");
     const cardImgEl = document.querySelector(".card-img");
-    console.log(cardImgEl);
+    // console.log(cardImgEl);
+    const btnEl = document.querySelector("button");
 
     // add event listener to show overlay
     cardImgEl.addEventListener("click", () => {
       overlayEl.classList.remove("d-none");
+    });
+
+    // add event listener to hide overlay
+    btnEl.addEventListener("click", () => {
+      overlayEl.classList.add("d-none");
     });
   });
